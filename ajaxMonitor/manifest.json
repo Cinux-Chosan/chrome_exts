@@ -21,6 +21,8 @@
     "default_title": "ajaxMonitor-v1"
   },
   "permissions": [
-    "webRequest"
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking"
   ]
 }

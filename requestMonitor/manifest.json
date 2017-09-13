@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "requestMonitor",
+  "description": "",
+  "version": "1.0",
+  "background": {
+    "persistent": true,
+    "scripts": ["bg.js"]
+  },
+  "content_scripts": [
+      {
+        "matches": ["*://*.meituan.com/*", "*://*.meituan.net/*"],
+        "run_at": "document_start",
+        "js": ["content_scripts.js"]
+      }
+    ],
+  "permissions": [
+    "webRequest",
+    "*://*.meituan.com/",
+    "*://*.meituan.net/"
+  ]
+}
