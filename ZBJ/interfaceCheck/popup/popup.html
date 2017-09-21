@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="/assets/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./popup.css">
+  <script type="text/javascript" src="/assets/bootstrap/bootstrap.min.css" charset="utf-8"></script>
+  <script type="text/javascript" src="./popup.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div class="body__container">
+    <form class="form-inline">
+      <div class="form-group col-xs-6">
+        <label for="protocal">协议：</label>
+        <input type="text" id="protocal" class="form-control">
+      </div>
+      <div class="form-group col-xs-6">
+        <label for="domain">域名：</label>
+        <input type="text" id="domain" class="form-control">
+      </div>
+      <div class="form-group col-xs-12">
+        <fieldset>
+          <legend>健康信息</legend>
+        <label for="data">数据：</label>
+        <textarea class="form-control" name="name" rows="16"></textarea>
+      </fieldset>
+      </div>
+      <div class="radio col-xs-4 col-xs-offset-8">
+        <label>
+          <input type="radio" name="method" id="1" value="1" checked>GET
+        </label>
+        <label>
+          <input type="radio" name="method" id="2" value="2" checked>POST
+        </label>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

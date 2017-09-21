@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "requestMonitor",
+  "description": "google ip 验证辅助",
+  "version": "1.0",
+  "background": {},
+  "content_scripts": [
+      {
+        "matches": ["*://*.google.com/*"],
+        "run_at": "document_end",
+        "js": ["content_scripts.js"],
+        "all_frames": true
+      }
+    ],
+  "permissions": []
+}
